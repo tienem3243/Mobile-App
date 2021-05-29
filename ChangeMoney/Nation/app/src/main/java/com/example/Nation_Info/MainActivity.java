@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         init();
         AndroidNetworking.initialize(getApplicationContext());
 
-        AndroidNetworking.get("http://api.geonames.org/countryInfoJSON?&username=tuananh")
+        AndroidNetworking.get("http://api.geonames.org/countryInfoJSON?&username=tienem")
                 .build()
                 .getAsString(new StringRequestListener() {
                     @Override
