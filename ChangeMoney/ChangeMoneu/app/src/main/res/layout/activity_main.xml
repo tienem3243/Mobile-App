@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input"
+                android:textSize="20dp" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/intInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textSize="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/txtNationOne"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NationOne"
+            android:layout_weight="0"/>
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/searchNationOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Viet Nam"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/id_spinner_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgNationOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSwap"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swap"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:baselineAligned="false">
+
+        <TextView
+            android:id="@+id/txtNationTwo"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NationOne"
+            android:layout_weight="0"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/searchNationTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dollar"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/id_spinner_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Submit"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Res"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/out_Output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:textSize="20dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
