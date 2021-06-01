@@ -65,7 +65,7 @@ public class SecondActivity  extends AppCompatActivity {
         btnSMS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phoneNum = "0915612706";
+                String phoneNum = "0941071713";
                 Intent intent = new Intent(Intent.ACTION_SENDTO,
                         Uri.parse("sms:" + phoneNum));
                 intent.putExtra("sms_body", resMsm);
